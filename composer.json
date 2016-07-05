@@ -1,7 +1,7 @@
 {
   "name": "hyperbolaa/juhesms",
-  "type": "juhesms",
-  "description": "make juhesms in sdk",
+  "type": "project",
+  "description": "sms in laravel",
   "keywords": ["juhe", "sms"],
   "homepage": "https://github.com/hyperbolaa/Juhesms",
   "license": "MIT",
@@ -21,7 +21,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.0.*"
+      "dev-master": "1.0.x-dev"
     }
   }
 }
