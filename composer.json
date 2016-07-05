@@ -1,9 +1,9 @@
 {
   "name": "hyperbolaa/juhesms",
-  "type": "sms",
+  "type": "juhesms",
   "description": "make juhesms in sdk",
   "keywords": ["juhe", "sms"],
-  "homepage": "https://github.com/hyperbolaa/juhesms",
+  "homepage": "https://github.com/hyperbolaa/Juhesms",
   "license": "MIT",
   "authors": [
     {
