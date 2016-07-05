@@ -16,16 +16,16 @@ class Juhesms
         $smsConf['mobile'] = $phonenum; //接受短信的用户手机号码
         switch ($tpl) {
             case 'code': //验证码
-                $smsConf['tpl_id']    = 5352; //您申请的短信模板ID，根据实际情况修改
+                $smsConf['tpl_id']    = 0000; //您申请的短信模板ID，根据实际情况修改
                 $smsConf['tpl_value'] = '#name#=' . $phonenum . '&#code#=' . $smsvalue; //您设置的模板变量，根据实际情况修改
                 break;
             case 'succ': //通过
-                $smsConf['tpl_id']    = 5353;
+                $smsConf['tpl_id']    = 1111;
                 $arr                  = explode("&&&", $smsvalue);
                 $smsConf['tpl_value'] = '#app#=' . $arr[0] . '&#code#=' . $arr[1];
                 break;
             case 'fail': //拒绝
-                $smsConf['tpl_id']    = 5354;
+                $smsConf['tpl_id']    = 2222;
                 $smsConf['tpl_value'] = '#app#=' . $smsvalue;
                 break;
         }
