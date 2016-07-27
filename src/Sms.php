@@ -4,7 +4,7 @@
  */
 namespace Hyperbolaa\Juhesms\src;
 
-class Juhesms
+class Sms
 {
     public static function send($tpl, $phonenum, $smsvalue)
     {
@@ -30,7 +30,7 @@ class Juhesms
                 break;
         }
 
-        $content = Juhesms::juhecurl($sendUrl, $smsConf, 1); //请求发送短信
+        $content = Sms::juhecurl($sendUrl, $smsConf, 1); //请求发送短信
 
         if ($content) {
             $result     = json_decode($content, true);
